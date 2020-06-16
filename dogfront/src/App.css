@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Quicksand', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dog-card {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px hsl(120, 40%, 20%);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.dog-card:hover {
+  background-color: rgba(7, 196, 196, 0.701);
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0.3em;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3 {
+  font-size: 30px;
 }
+
+.form-box {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px hsl(120, 40%, 20%);
+}
+

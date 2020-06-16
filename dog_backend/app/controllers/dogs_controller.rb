@@ -1,5 +1,5 @@
 class DogsController < ApplicationController
-    def show
+    def index
         @dogs = Dog.all 
         render json: @dogs
     end 
