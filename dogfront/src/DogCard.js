@@ -5,7 +5,7 @@ export default function DogCard({ dog }) {
         <div className='dog-card'>
             <img src={dog.image}/>
             <p>{dog.name}, {dog.age}</p>
-            <a href={dog.external_link}>Adopt Page</a>
+            <a href={dog.external_link} target='_blank'>Adopt Page</a>
         </div>
     )
 }

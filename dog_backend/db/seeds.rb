@@ -85,7 +85,7 @@ audi = Dog.create(
     goodwithcats: false,
     goodwithkids: false,
     energy: 3,
-    image: 'https://petstablished-app-beta.s3.amazonaws.com/uploads/image/image/1180386/DSC_1643editr_small.png'
+    image: 'https://petstablished-app-beta.s3.amazonaws.com/uploads/image/image/1180791/ABA772BA-5F3D-4E2C-B069-3912C963740D.jpeg'
 )
 
 aspen = Dog.create(
@@ -163,4 +163,15 @@ maggie = Dog.create(
     goodwithkids: true,
     energy: 1,
     image: 'https://g.petango.com/photos/1692/e207eca4-0edc-4da1-ac09-9fa1989339f1.jpg'
+)
+
+nash = Dog.create(
+    name: 'Nash',
+    age: 2,
+    external_link: 'https://www.rockymountainlabrescue.com/index.php/available-dogs/dog-bio-sheets#nash',
+    goodwithdogs: true,
+    goodwithcats: false,
+    goodwithkids: false,
+    energy: 3,
+    image: 'https://www.rockymountainlabrescue.com/files/1215/9016/4929/nash1.jpg'
 )
