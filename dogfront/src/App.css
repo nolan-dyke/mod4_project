@@ -108,3 +108,13 @@ form {
   box-shadow: 0 2px 2px hsl(120, 40%, 20%);
 }
 
+.new-user-button {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.error {
+  color: red;
+}

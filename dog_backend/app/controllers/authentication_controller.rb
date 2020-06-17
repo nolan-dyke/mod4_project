@@ -15,7 +15,7 @@ class AuthenticationController < ApplicationController
                 }
                 secret = Rails.application.secrets.secret_key_base
                 token = JWT.encode(payload, secret)
-                render json: {token: token}
+                render json: {user: @user, token: token}
             end 
         end
 

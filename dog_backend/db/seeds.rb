@@ -1,3 +1,4 @@
+Favorite.destroy_all
 Dog.destroy_all
 
 sunshine = Dog.create(
@@ -175,3 +176,7 @@ nash = Dog.create(
     energy: 3,
     image: 'https://www.rockymountainlabrescue.com/files/1215/9016/4929/nash1.jpg'
 )
+
+Favorite.create(user_id: 1, dog: sunshine)
+Favorite.create(user_id: 1, dog: mitch)
+Favorite.create(user_id: 1, dog: nash)
