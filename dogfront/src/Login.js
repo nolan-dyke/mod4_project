@@ -24,8 +24,8 @@ export default class Login extends Component {
         .then(result => {
             this.props.setUser(result.user)
             localStorage.setItem('token', result.token)
-            
         })
+        .then(() => this.props.history.push('/'))
     }
 
     render() {

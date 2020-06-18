@@ -49,6 +49,9 @@ table {
 
 body {
   font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  background-image: linear-gradient(to right, rgba(255,0,0,0.5), rgba(255,0,0,1));
 }
 
 .dog-list {
@@ -65,10 +68,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(255, 192, 203, 0.714);
 }
 
 .dog-card:hover {
-  background-color: rgba(7, 196, 196, 0.701);
+  background-color: pink;
 }
 
 img {
@@ -80,7 +84,7 @@ img {
 
 h1 {
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   padding: 0.3em;
@@ -106,9 +110,10 @@ form {
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 2px 2px hsl(120, 40%, 20%);
+  background-color: rgba(255, 192, 203, 0.714);
 }
 
-.new-user-button {
+.options {
   height: 10px;
   position: absolute;
   top: 0;
@@ -117,4 +122,30 @@ form {
 
 .error {
   color: red;
+}
+
+.hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('./hero.jpg'); */
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.838);
+}
+
+button {
+  font-family: inherit;
+  box-shadow: 3px 4px 0px 0px #899599;
+	background-color: rgba(128, 128, 128, 0.488);
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-size:17px;
+	padding:7px 25px;
+  text-shadow:0px 1px 0px #e1e2ed;
+  text-decoration: black;
 }

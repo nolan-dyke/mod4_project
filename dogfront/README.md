@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rescue Dog Matcher 
 
-## Available Scripts
+## General Info
+The Rescue Dog Matcher is a fullstack, three day project. It was completed to satisfy the Denver Flatiron School's module 4 project requirements. Its purpose is to display the info of dogs from Colorado dog rescues, and allow users to filter these dogs according to criteria the user selects. The user may then visit the adoption page for an individual dog, or save dogs to favorites to view be viewed later.
 
-In the project directory, you can run:
+## Technologies
+* Ruby on Rails
+* ActiveRecord
+* JavaScript
+* React
+* HTML/CSS
 
-### `yarn start`
+## Video
+[Walkthrough](https://youtu.be/O6CBbB11tTg)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup
+This app requires the use of a Rails backend, which should be served on port 3000.This repository contains both the front and back ends. Both come equipped with all necessary gems and packages, but these must be installed locally. This can be done in the backend by running:
+`$ bundle install`
+the node packages can be installed in the frontend using 
+`$ npm install`
+In order to use the backend, the database, migrations, and seeds need to be set up. This can be accomplished with the command: 
+`$ rails db: {create, migrate, seed}`
+In order to use the app, a username and password are required. At this point you can navigate the app.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Functionality
+* Login or create new profile
+* Authentication
+* Display dogs from Colorado dog rescues
+* Add dogs to favorites
+* Visit adoption page
+* Filter dogs based on criteria
 
-### `yarn test`
+## Down the pipeline
+* Add rescue profiles, for members of the dog rescue
+* Add form to add new dogs
+* Flip card to reveal dog description
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Author
+Nolan Dyke [GitHub](https://github.com/nolan-dyke) [LinkedIn](linkedin.com/in/nolan-dyke)

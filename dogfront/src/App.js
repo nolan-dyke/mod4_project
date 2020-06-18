@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import './App.css'
 import Login from './Login'
 import CreateNewUser from './CreateNewUser'
-import DogList from './DogList.js'
-import PreferenceForm from './PreferenceForm'
 import FavoritesList from './FavoritesList'
+import PrivateRoute from './PrivateRoute'
+import Hero from './Hero'
+import {Route, Link} from 'react-router-dom'
 const dogURL = 'http://localhost:3000/dogs'
 const favoritesURL = 'http://localhost:3000/favorites'
 
@@ -19,7 +20,7 @@ export default class App extends Component {
 
   componentDidMount() {
     this.getDogs()
-    this.getFavorites()
+    // this.getFavorites()
   }
 
   getDogs = () => {
@@ -72,16 +73,15 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>Pup Matcher</h1>
-        <button className='new-user-button' onClick={this.changeLogin} >{this.state.login ? 'New User?' : 'Login'}</button>
-        <button onClick={this.changeFavs} >Favorites</button>
-        <div className='form-box'>
-          {this.state.login ? <Login setUser={this.setUser}/> : <CreateNewUser setUser={this.setUser} />}
+        <Hero />
+        <div className='options'>
+          {localStorage.token ? null : <button className='new-user-button' onClick={this.changeLogin} >{this.state.login ? 'New User?' : 'Login'}</button>}
+          {localStorage.token ? <button onClick={this.changeFavs} >Favorites</button> : null}
         </div>
         <div className='form-box'>
-          <PreferenceForm filterDogs={this.filterDogs} />        
+          <Route path='/login' render={(props) => this.state.login ? <Login {...props} setUser={this.setUser} /> : <CreateNewUser setUser={this.setUser}/>}/>
         </div>
-        <DogList dogs={this.state.dogs} addFavorite={this.addFavorite} />
+        <PrivateRoute exact path='/' dogs={this.state.dogs} addFavorite={this.addFavorite} filterDogs={this.filterDogs} />
         {this.state.favOn ? <FavoritesList dogs={this.state.favorites} /> : null}
       </div>
     )

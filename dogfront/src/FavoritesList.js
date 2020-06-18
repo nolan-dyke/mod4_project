@@ -6,6 +6,7 @@ export default function FavoritesList({ dogs }) {
 
     return (
         <div className='dog-list'>
+            <h1>Favorites</h1>
             {showDogs}
         </div>
     )
